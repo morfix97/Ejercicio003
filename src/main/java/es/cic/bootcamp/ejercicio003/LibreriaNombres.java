@@ -1,11 +1,16 @@
 package es.cic.bootcamp.ejercicio003;
 
 public class LibreriaNombres {
-	private static String nombresClase[] = { "AF", "PM", "AC", "JB", "PG", "RP" };
+	public static String nombresClase[] = { "AF", "PM", "AC", "JB", "PG", "RP" };
+	public int m;
 
 	public String NombreAleatorio() {
-		int i = (int) (Math.random() * 6);
-		return nombresClase[i];
+		m = (int) (Math.random() * 6);
+		return nombresClase[m];
+	}
+
+	public int posicionNombreAleatorio() {
+		return m;
 	}
 
 	public String TresNombresAleatorios() {

@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import es.cic.bootcamp.ejercicio003.LibreriaNombres;
+
 class LibreriaNombresTest {
 
 	@BeforeEach
@@ -13,7 +15,10 @@ class LibreriaNombresTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		LibreriaNombres libreria = new LibreriaNombres();
+		String nombre = libreria.NombreAleatorio();
+		int m = libreria.posicionNombreAleatorio();
+		assertEquals(nombre,LibreriaNombres.nombresClase[m],"Ha habido un error ");
 	}
 
 }
